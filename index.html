@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="logosigla.png" />
+    <title>SL CONSULTAS</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group row">
+                    <div class="col-md-6"> <br><br><br><br><br><br>
+                        <label for="numero">NÚMERO</label>
+                        <input type="text" class="form-control" id="numero">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group row">
+                    <div class="col-md-12"><br><br>
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" class="form-control" data-mask="00.000.000/0000-00" id="cnpj" maxlength="18"
+                            placeholder="Insira o CNPJ">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="razaoSocial">RAZÃO SOCIAL</label>
+                        <input type="text" class="form-control" id="razaoSocial" placeholder="Insira a Razão Social">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="nomeRepresentante">NOME DO REPRESENTANTE</label>
+                        <input type="text" class="form-control" id="nomeRepresentante"
+                            placeholder="Insira o NOME do Sócio Majoritário">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="cpfRepresentante">CPF DO REPRESENTANTE</label>
+                        <input type="text" class="form-control" data-mask="000.000.000-00" id="cpfRepresentante"
+                            maxlength="14" placeholder="Insira o CPF do Sócio Majoritário">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="codigoSimplesNacional">CÓDIGO SIMPLES NACIONAL</label>
+                        <input type="text" class="form-control" data-mask="000000000000" id="codigoSimplesNacional"
+                            placeholder="Insira o CÓDIGO DE ACESSO">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="logradouro">LOGRADOURO</label>
+                        <input type="text" class="form-control" id="logradouro"
+                            placeholder="Insira o Endereço da Empresa">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="tributacao">TRIBUTAÇÃO</label>
+                        <input type="text" class="form-control" id="tributacao"
+                            placeholder="Ex.:Simples Nacional/Lucro Presumido/Lucro real">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="porte">PORTE</label>
+                        <input type="text" class="form-control" id="porte" placeholder="Ex.:EPP/ME...">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <label for="dataAbertura">DATA DE ABERTURA</label>
+                        <input type="date" class="form-control" id="dataAbertura">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12"><br>
+                        <button class="btn btn-primary" id="consultarBtn">Consultar CNPJ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
