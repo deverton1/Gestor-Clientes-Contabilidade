@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SLClientes.API.props" />
+</Project>

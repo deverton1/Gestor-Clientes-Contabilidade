@@ -1,6 +1,0 @@
-@SLClientesAPI_HostAddress = http://localhost:5233
-
-GET {{SLClientesAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
