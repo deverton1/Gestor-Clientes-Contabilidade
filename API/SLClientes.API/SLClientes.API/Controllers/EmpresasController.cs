@@ -32,5 +32,11 @@ namespace SLClientes.API.Controllers
         {
             return Ok(await _empresasService.GetAllAsync());
         }
+        [HttpDelete]
+        [Route("Deletar-Produto")]
+        public async Task<IActionResult> DeleteEmpresaById(int empresaId, EmpresaCommand command)
+        {
+            return Ok(await _empresasService.DeleteEmpresaById(empresaId, command));
+        }
     }
 }

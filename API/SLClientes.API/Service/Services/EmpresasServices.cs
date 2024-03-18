@@ -28,6 +28,11 @@ namespace Service.Services
             return await _empresasRepository.CadastrarEmpresa(command);
         }
 
+        public async Task<string> DeleteEmpresaById(int empresaId, EmpresaCommand command)
+        {
+            return await _empresasRepository.DeleteEmpresaById(empresaId, command);
+        }
+
         public async Task<IEnumerable<EmpresaCommand>> GetAllAsync()
         {
             return await _empresasRepository.GetAllAsync();

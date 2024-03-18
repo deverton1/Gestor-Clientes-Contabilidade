@@ -14,5 +14,6 @@ namespace Domain.Interfaces
         Task<IEnumerable<EmpresaCommand>> GetAllAsync();
         Task<string> CadastrarEmpresa(EmpresaCommand command);
         Task<string> AtualizarEmpresa(int empresaId, EmpresaCommand command);
+        Task<string> DeleteEmpresaById(int empresaId, EmpresaCommand command);
     }
 }

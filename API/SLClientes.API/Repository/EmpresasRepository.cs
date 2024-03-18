@@ -74,6 +74,20 @@ namespace Repository
             }
         }
 
+        public async Task<string> DeleteEmpresaById(int empresaId, EmpresaCommand command)
+        {
+            string queryDeleteById = @"DELETE Empresas
+                                        WHERE Id = @Id";
+            using (SqlConnection conn = new SqlConnection (conexao))
+            {
+                conn.Execute(queryDeleteById, new
+                {
+                    Id = empresaId,
+                });
+                return "Empresa DELETADA com sucesso!";
+            }
+        }
+
         public async Task<IEnumerable<EmpresaCommand>> GetAllAsync()
         {
             string queryListar = @"SELECT * FROM Empresas";
